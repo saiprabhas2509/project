@@ -67,7 +67,7 @@
                     </form>
                     </div>
                     <div class="card-footer ">
-                    <a href="/index" style="font-size:20px; ">Click here to go to public files</a>
+                    <a href="/files" style="font-size:20px; ">Click here to go to public files</a>
                     </div>
             </div>
         </div>

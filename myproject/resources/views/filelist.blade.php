@@ -2,7 +2,7 @@
 @extends('layouts.app')
 @section('content')
 
-
+<div class="container-fluid">
 <div class="row">
 <div class="col-md-12">
 </br>
@@ -10,23 +10,30 @@
 </br>
 <table class="table table-bordered">
 <tr>
-<td>file name</td>
-<td>type</td>
-<td>size(in mb)</td>
-<td>access specifcation</td>
-<td>upload date&time</td>
-<td>download link</td>
+<th>file name</th>
+<th>type</th>
+<th>size(in mb)</th>
+<th>access specifcation</th>
+<th>upload date&time</th>
+<th>download link</th>
 </tr>
-@foreach($data as $row)
+@foreach($data as $key => $row)  
 <tr>
-<td> {{ $row->name }}</td>
-<td> {{ $row->type }}</td>
-<td> {{ $row->size }}</td>
-<td> {{ $row->access }}</td>
-<td> {{ $row->updated_at }}</td>
-<td></td>
+<th> {{ $row->name }}</th>
+<th> {{ $row->type }}</th>
+<th> {{ $row->size }}</th>
+<td> {{ $row->access }}</th>
+<th> {{ $row->updated_at }}</th>
+
+<th> <a href="#" download = "#">
+     click here</a></th> 
 </tr>
 @endforeach
 </table>
-
+</br> 
+</br>
+<a href="/home" style="font-size:20px; ">Click here to go upload page</a>
+</div>
+</div>
+</div>
 @endsection
