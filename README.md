@@ -19,10 +19,12 @@ file are stored in storage(server)
 A files table is created with name,type,size,uploader,access,updated_at; 
 
 /home contions two links which links to index.blade and filelist.blade;
+
 case1:
 so, /files (ie index.blade)
 dispalys the table of files with public access by all users
 u also direct to home from here if u are loggedin
+
 case2:
 next, /file (ie filelist.bladr)
 displays the table of files uploaded by a user(both public and private)
@@ -34,6 +36,7 @@ directed to http://127.0.0.1:8000 (ie starting page or actual index page of this
 thakyou for using fvcs
 
 things to be added soon-
-//version control to the files (uploaded by same user if same filename)
+
+//version control to the files (uploaded by same user with same filename)
+
 // ip address of user, hashvalue of file and download link to be added to files table
-//deletion button for deleting the files(optional)
